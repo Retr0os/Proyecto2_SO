@@ -350,8 +350,8 @@ public class MainPage extends javax.swing.JFrame {
     public void setPersonajesImgsUi(){
         
         Random r = new Random();
-        int numLambo = r.nextInt(4) + 1;
-        int numBg = r.nextInt(4) + 1;
+        int numLambo = r.nextInt(9) + 1;
+        int numBg = r.nextInt(9) + 1;
         
         String picLambo = Integer.toString(numLambo);
         String picBg = Integer.toString(numBg);
