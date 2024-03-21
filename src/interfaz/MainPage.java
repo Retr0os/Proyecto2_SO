@@ -100,7 +100,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Carreras ganadas");
+        jLabel1.setText("Rondas Ganadas");
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, -1, -1));
 
         lamboWinsLabel.setBackground(new java.awt.Color(51, 51, 51));
@@ -117,7 +117,7 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Carreras ganadas");
+        jLabel2.setText("Rondas Ganadas");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
         jPanel1.add(logoBg, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, -10, 140, 130));
 
