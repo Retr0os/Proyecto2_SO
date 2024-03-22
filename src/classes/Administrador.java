@@ -115,8 +115,8 @@ public class Administrador extends Thread {
                 // actualizar HP y calidad en interfaz
                 GlobalUi.getMainPage().getCalidadBensonUi().setText(Integer.toString((int) benson.getBonus()));
                 GlobalUi.getMainPage().getCalidadTophUi().setText(Integer.toString((int) toph.getBonus()));
-                GlobalUi.getMainPage().getBensonHP().setText(Integer.toString(benson.getCaballosFuerza()));
-                GlobalUi.getMainPage().getTophHP().setText(Integer.toString(toph.getCaballosFuerza()));
+                GlobalUi.getMainPage().getBensonHP().setText(Integer.toString(benson.getFuerza()));
+                GlobalUi.getMainPage().getTophHP().setText(Integer.toString(toph.getFuerza()));
                 
                 // setear en 0 el contador de inanicion de cada personaje
                 if(benson != null){
