@@ -17,7 +17,7 @@ public class Personaje {
     private int prioridad;
     private int Bonus;
     private int contadorRondas;
-    private int caballosFuerza;
+    private int fuerza;
     private Random r = new Random();
 
     public Personaje(int id, String marca, int prioridad, int Bonus) {
@@ -26,7 +26,7 @@ public class Personaje {
         this.prioridad = prioridad;
         this.Bonus = Bonus;
         this.contadorRondas = 0;
-        this.caballosFuerza = r.nextInt(900 - 400) + 400;
+        this.fuerza = r.nextInt(900 - 400) + 400;
     }
 
     // Getters y setters
@@ -35,8 +35,8 @@ public class Personaje {
         return id;
     }
     
-    public int getCaballosFuerza(){
-        return this.caballosFuerza;
+    public int getFuerza(){
+        return this.fuerza;
     }
 
     public void setId(int id) {
