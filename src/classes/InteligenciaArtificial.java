@@ -74,7 +74,7 @@ public class InteligenciaArtificial extends Thread {
                         GlobalUi.getMainPage().getWinnersLabel().setText(printWinners());
                         if(winner.getMarca().equals("Benson")){ // es benson
                             this.bensonWins++;
-                            //sumar contador de carreras ganadas
+                            //sumar contador de combates ganadas
                             GlobalUi.getMainPage().getbensonWinsLabel().setText(Integer.toString(bensonWins));
                             //decir que gano
                             GlobalUi.getMainPage().getbensonWinnerLabel().setText("Ganador!");
@@ -150,7 +150,7 @@ public class InteligenciaArtificial extends Thread {
         Personaje winner = null;
         
         // si la diferencia de poder de fuerza es <= 50, entonces gana el de mejor vida, si es la misma, gana el que tenga mas defensa
-        if(Math.abs(personajebenson.getCaballosFuerza() - personajeToph.getCaballosFuerza()) <= 50){
+        if(Math.abs(personajebenson.getFuerza() - personajeToph.getFuerza()) <= 50){
             
             if (this.personajeToph.getBonus() < this.personajebenson.getBonus()){
                 winner = this.personajeToph; 
@@ -160,7 +160,7 @@ public class InteligenciaArtificial extends Thread {
                 winner = this.winnerByHP();
             }
             
-        }else { // la diferencia es mayor a 50 dmg, gana el que tenga mas vida
+            }else { // la diferencia es mayor a 50 dmg, gana el que tenga mas vida
             winner = this.winnerByHP();
         }
         
@@ -170,10 +170,10 @@ public class InteligenciaArtificial extends Thread {
     public Personaje winnerByHP(){
         Personaje winner = null;
         
-        if(personajebenson.getCaballosFuerza() > personajeToph.getCaballosFuerza()){
+        if(personajebenson.getFuerza() > personajeToph.getFuerza()){
             //benson tiene mas HP
             winner = this.personajebenson;
-        }else if (personajebenson.getCaballosFuerza() < personajeToph.getCaballosFuerza()){
+        }else if (personajebenson.getFuerza() < personajeToph.getFuerza()){
             winner = this.personajeToph;
         }else{ // tienen los mismos ataque, se hace al azar
             int num = random.nextInt(2);
