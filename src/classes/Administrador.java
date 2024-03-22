@@ -283,12 +283,12 @@ public class Administrador extends Thread {
         }
     }
     
-    public void enviarpersonajesColaRefuerzo(Personaje lambito, Personaje bugga){
-        if(lambito != null ){
-            this.bensonRefuerzo.encolar(lambito);
+    public void enviarpersonajesColaRefuerzo(Personaje benson, Personaje toph){
+        if(benson != null ){
+            this.bensonRefuerzo.encolar(benson);
         }
-        if(bugga != null){
-            this.tophRefuerzo.encolar(bugga);
+        if(toph != null){
+            this.tophRefuerzo.encolar(toph);
         }
     }
     
